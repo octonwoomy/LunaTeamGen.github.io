@@ -23,9 +23,6 @@ team_container {
     bottom: 90%;
     border: 5px solid white;
   }
-img {
-  size: 90px;
-}
 .button_container {
   padding: 3%;
   position: absolute;
