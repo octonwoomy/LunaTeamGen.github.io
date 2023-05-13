@@ -10,19 +10,27 @@ body {
   background-image: linear-gradient(180deg, rgb(245, 130, 230), rgb(139, 205, 243));
 }
 h1 {
-    font: "Tahoma";
+    font-family: "Tahoma";
     text-align: center;
     color: white;
     font-size: 500%;
 }
-team_container {
-    display: block;
-    height: 35%;
-    width: 70%;
-    right: 15%;
-    bottom: 90%;
-    border: 5px solid white;
-  }
+#team_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+#team_container img {
+  width: 83%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+#team_container img:hover {
+  transform: scale(1.2);
+}
 .button_container {
   padding: 3%;
   position: absolute;
@@ -64,6 +72,10 @@ h2 {
   position: absolute;
   right: 0%;
   bottom: 0%;
+}
+.twitter img {
+  width: 45px;
+  object-fit: cover;
 }
 .tiktok {
   display: flex;
