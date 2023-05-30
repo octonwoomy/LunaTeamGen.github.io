@@ -10,10 +10,10 @@ body {
   background-image: linear-gradient(180deg, rgb(245, 130, 230), rgb(139, 205, 243));
 }
 h1 {
-    font-family: "Tahoma";
-    text-align: center;
-    color: white;
-    font-size: 500%;
+  font-family: "Tahoma";
+  text-align: center;
+  color: white;
+  font-size: 500%;
 }
 #team_container {
   display: grid;
@@ -21,6 +21,8 @@ h1 {
   justify-items: center;
   align-items: center;
   gap: 20px;
+  position: relative;
+  z-index: 1;
 }
 #team_container img {
   width: 60%;
@@ -38,6 +40,7 @@ h1 {
   margin-bottom: -10px;
 }
 button {
+  margin-bottom: 100px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -52,40 +55,36 @@ button {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   transition: all 0.2s ease-in-out;
 }
-
 button:active {
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
   transform: translateY(2px);
 }
 h2 {
-  color:white;
+  color: white;
   display: flex;
   justify-content: right;
 }
-h2 {
-  color:white;
-}
 .social-container {
-  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 450px;
   display: flex;
   justify-content: right;
   border-radius: 5px;
   border-color: white;
   border-width: 5px;
   margin-right: 5px;
-  margin-top: -230px;
 }
 .social-container h2 {
   font-family: "Tahoma";
   padding-top: 260px;
   margin-right: -140px;
 }
-
 .youtube img {
   padding-top: 320px;
   width: 50px;
 }
-
 .twitter img {
   padding-top: 350px;
   padding-left: 75%;
