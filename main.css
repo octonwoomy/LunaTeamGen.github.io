@@ -78,20 +78,20 @@ h2 {
 }
 .social-container h2 {
   font-family: "Tahoma";
-  padding-top: 260px;
+  margin-top: 260px;
   margin-right: -140px;
 }
 .youtube img {
-  padding-top: 320px;
+  margin-top: 320px;
   width: 50px;
 }
 .twitter img {
-  padding-top: 350px;
+  margin-top: 350px;
   padding-left: 75%;
   width: 80px;
 }
 .tiktok img {
   width: 100px;
-  padding-top: 400px;
+  margin-top: 400px;
   margin-left: -82px;
 }
