@@ -112,19 +112,21 @@ h2 {
   #team_container {
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%);
     justify-items: center;
     gap: 10px;
   }
-
+  .social-container{
+    display: none;
+  }
   #team_container img {
     width: 100%;
     height: auto;
   }
 
   .button_container {
-    bottom: 10%;
+    bottom: 5%;
     margin-bottom: 0;
     flex-direction: column;
     align-items: center;
