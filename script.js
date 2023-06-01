@@ -28,3 +28,6 @@ function displayPokemon(pokemonList) {
     team_container.appendChild(img);
   }
 }
+function notimplemented(){
+  alert("Not Implemented")
+}
