@@ -104,7 +104,7 @@ h2 {
   margin-top: 400px;
   margin-left: -82px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   html {
     width: 100%;
     height: auto;
