@@ -105,77 +105,75 @@ h2 {
   margin-left: -82px;
 }
 @media screen and (max-width: 800px) {
-  html {
+  /* Resetting default styles */
+  html, body {
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   body {
-    height: auto;
     background-image: linear-gradient(180deg, rgb(245, 130, 230), rgb(139, 205, 243));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
   }
 
   h1 {
     font-size: 250%;
+    margin-top: 0;
   }
 
   #team_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    align-self: center;
   }
-  
 
   #team_container img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   .button_container {
-    margin-left: 0;
     margin-top: 20px;
-    bottom: unset;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
   }
+
   button {
-    width: 100%;
+    width: 48%;
     font-size: 30px;
-    margin-bottom: -80px;
+    margin-bottom: 20px;
   }
 
   .social-container {
-    position: relative;
-    padding-top: 0;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 20px;
+    justify-content: flex-end;
   }
 
   .social-container h2 {
     display: none;
   }
 
-  .social-container .youtube img {
-    display: none;
-    position: relative;
+  .social-container div {
+    margin-left: 10px;
+  }
+
+  .social-container img {
     width: 30px;
-    margin-bottom: -400px;
-  }
-
-  .social-container .twitter img {
-    display: none;
-    position: relative;
-    width: 60px;
-    margin-bottom: -400px;
-    margin-right: 110px;
-  }
-
-  .social-container .tiktok img {
-    display: none;
-    position: relative;
-    width: 80px;
-    margin-bottom: -400px;
-    margin-right: -300px;
   }
 }
