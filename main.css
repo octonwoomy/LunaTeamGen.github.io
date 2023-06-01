@@ -104,62 +104,35 @@ h2 {
   margin-top: 400px;
   margin-left: -82px;
 }
-@media screen and (max-width: 767px) {
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    background-image: linear-gradient(180deg, rgb(245, 130, 230), rgb(139, 205, 243));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 20px;
-  }
-
+@media (max-width: 480px) {
   h1 {
     font-size: 250%;
-    margin-top: 0;
   }
 
   #team_container {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-items: center;
     gap: 10px;
-    margin-top: 20px;
-    width: 90%;
-    max-width: 800px;
-    align-self: center;
   }
 
   #team_container img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
   }
 
   .button_container {
-    margin-top: auto;
-    margin-bottom: 20px;
-    width: 90%;
-    max-width: 800px;
-    display: flex;
-    justify-content: space-between;
+    bottom: 10%;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
-  button {
-    width: 48%;
+  .button_container button {
+    margin-bottom: 10px;
+    width: 80%;
     font-size: 30px;
-    margin-bottom: 20px;
-  }
-
-  .social-container {
-    display: none;
   }
 }
-
-
