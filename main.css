@@ -126,14 +126,14 @@ h2 {
 
   h1 {
     font-size: 300%;
-    margin-top: -40px;
+    margin-top: 10px;
   }
 
   #team_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-    margin-top: -20px;
+    margin-top: 10px;
   }
 
   #team_container img {
@@ -192,3 +192,4 @@ h2 {
     margin-right: -300px;
   }
 }
+
