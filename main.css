@@ -107,12 +107,17 @@ h2 {
 @media screen and (max-width: 800px) {
   html {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   body {
-    height: auto;
+    height: 100%;
     background-image: linear-gradient(180deg, rgb(245, 130, 230), rgb(139, 205, 243));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
 
   h1 {
@@ -120,9 +125,10 @@ h2 {
   }
 
   #team_container {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
-    margin-top: -40px;
+    margin-top: 0;
   }
 
   #team_container img {
@@ -131,13 +137,17 @@ h2 {
   }
 
   .button_container {
-    margin-left: 27.5px;
-    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
   }
+
   button {
-    width: 100%;
+    width: 200px;
     font-size: 30px;
-    margin-bottom: -80px;
+    margin-bottom: 20px;
   }
 
   .social-container {
