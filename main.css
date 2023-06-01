@@ -143,7 +143,8 @@ h2 {
   }
 
   .button_container {
-    margin-top: 20px;
+    margin-top: auto;
+    margin-bottom: 20px;
     width: 90%;
     max-width: 800px;
     display: flex;
@@ -160,4 +161,5 @@ h2 {
     display: none;
   }
 }
+
 
